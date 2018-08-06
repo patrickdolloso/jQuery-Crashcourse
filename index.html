@@ -1,5 +1,5 @@
-<!--https://www.youtube.com/watch?v=3nrLc_JOF7k-->
-<!--jQuery Crash Course [1] Intro & Selectors-->
+<!--https://www.youtube.com/watch?v=VlWsJHsVb-E&t=3s-->
+<!--jQuery Crash Course [2] Events-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,66 +38,114 @@
 </head>
 <body>
     <header>
-        <h1>jQuery Crash Course</h1>
+        <h1>jQuery Crash Course  pt.2</h1>
     </header>
+
     <div id="container">
-        <h1 id="heading1">Heading One</h1>
-        <p id="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, laborum! Voluptate eum tenetur consectetur dolore natus non! Adipisci rem provident nostrum porro. Id at numquam rerum magnam, ex quam obcaecati?</p>
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+    </div>
 
-        <h1 class="heading2">Heading One</h1>
-        <p class="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, laborum! Voluptate eum tenetur consectetur dolore natus non! Adipisci rem provident nostrum porro. Id at numquam rerum magnam, ex quam obcaecati?</p>
+    <div>
+        <p id="para2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis aperiam alias nobis recusandae quibusdam sed quidem eum porro quo hic excepturi, magni quis. Quod facilis, est aliquam tenetur quia quasi?</p>
 
-        <!--Lists corresponding to jQuery ('ul#list li:<place>')-->
+        <h1 id="coords"></h1>
 
-        <ul id="list">
-            <li>List 1</li>
-            <li>List 2</li>
-            <li>List 3</li>
-            <li>List 4</li>
-            <li>List 5</li>
-            <li>List 2</li>
-            <li>List 3</li>
-            <li>List 4</li>
-            <li>List 5</li>
-            <li>List 2</li>
-            <li>List 3</li>
-            <li>List 4</li>
-            <li>List 5</li>
-        </ul>
+        <form>
+            <label>Name</label><br>
+            <input type="text" name="name" id="name"><br>
 
-        <input type="button" value="Button 1">
-        <input type="submit" value="Button 2">
-        <input type="text">
+            <label>Email</label><br>
+            <input type="email" name="email" id="email"><br>
 
-        <a href="google.com">Google</a>
-        <a href="facebook.com">facebook</a>
+            <label>Gender</label><br>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+            <input type="submit" value="Submit">
+        </form>
+
 
     </div>
 
+
     <script>
+    $(document).ready(function(){
+        
+        /*
+        //Pop-up message box jQuery
+        $('#btn1').click(function(){
+           alert('Message!');
+        })
+        */
 
-        //jQuery script! (uncomment to activate properties)
 
-        //Heading modifiers <- DONT UNCOMMENT
-        // $('h1#heading1').hide();
-       // $('h1.heading2').hide();
-       
-       //List modifiers <- DONT UNCOMENT
-       //$('ul#list li:first').css('color','blue');
-       //$('ul#list li:last').css('color','orange');
-       //$('ul#list li:even').css('background-color','green');
-       //$('ul#list li:nth-child(3n)').css('list-style','none');
+        /* message box 2
+        $('#btn1').on('click',function(){
+            alert('Clicked Button!');
+        });
+        */
 
-       //Button types modifiers
-       //$(':submit').hide();
-       //$(':button').hide();
-       //$(':text').hide();
-       
-       //hrefs
-       //$('[href="google.com"]').css('color','red');
-    
-        //grab all
-        //$('*').hide();
+        /* Hide n show
+        $('#btn1').on('click',function(){
+            alert('Clicked Button!');
+            $('#para2').hide();
+        });  
+
+        $('#btn2').on('click',function(){
+            alert('Clicked Button!');
+            $('#para2').show();
+        });  */
+
+        /*
+
+        $('#btn1').click(function(e){
+            //alert(e.currentTarget.id);
+            //alert(e.currentTarget.innerHTML);
+            //alert(e.currentTarget.outerHTML);
+        });
+
+        */
+
+        /*
+        // Mouse coordinates
+        $(document).on('mousemove', function(e){
+            $('#coords').html('Coords: Y: ' +e.clientY +"X: " +e.clientX);
+        });*/
+        
+        /*
+
+        //focus and blur
+        $('input').focus(function(){
+            //alert('Focus');
+            $(this).css('background','pink');
+        });
+        
+        $('input').blur(function(){
+            //alert('Focus');
+            $(this).css('background','white');
+        });
+
+        $('input').keyup(function(e){
+            console.log(e.target.value)
+        });
+
+        */
+
+    //     $('select#gender').change(function(e){
+    //         alert(e.target.value);
+    //     });
+
+    //     $('#form').submit(function(e){
+    //         e.preventDefault();
+    //         var name = $('input#name').val();
+    //         console.log(name);
+    //     });
+
+
+    // });
+
     </script>
     
 </body>

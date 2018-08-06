@@ -21,7 +21,7 @@ This is a quick crash course on jQuery 3.3.1 to sharpen my Front End Designing s
 2. Scroll to "script" section to access jQuery code
 3. Uncomment or modify to activate jQuery attributes to
 <br />
-<img src="img/jquery1.0.gif" width="400px">
+<img src="images/jquery-1.gif" width="400px">
 
 ## Reviewers:
 None
