@@ -16,9 +16,12 @@ This is a quick crash course on jQuery 3.3.1 to sharpen my Front End Designing s
 > (Link)
 
 ## How to run file:
-clone into machine, open "index.html" in browser
+[1] Selector commit:
+1. Clone into machine, open "index.html" in browser
+2. Scroll to "script" section to access jQuery code
+3. Uncomment or modify to activate jQuery attributes to
 <br />
-<img src="#" width="400px">
+<img src="img/jquery1.0.gif" width="400px">
 
 ## Reviewers:
 None
