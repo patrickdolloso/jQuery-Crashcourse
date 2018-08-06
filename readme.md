@@ -7,7 +7,7 @@ This is a quick crash course on jQuery 3.3.1 to sharpen my Front End Designing s
 > https://www.youtube.com/watch?v=3nrLc_JOF7k
 > jQuery Crash Course [1] Intro & Selectors
 
-##File List
+## File List
 1. index.html
 2. readme.md
 3. img folder > asd
